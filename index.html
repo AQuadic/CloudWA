@@ -10,7 +10,11 @@
       name="keywords"
       content="CloudWA"
     />
-
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link
       rel="stylesheet"
@@ -80,6 +84,26 @@
         whatsapp then you can start schedule, sending messages, or integrate
         with our API.
       </h3>
+      <div class="works">
+<div class="part s_end">
+  <img src="./image/num1.png" alt="">
+  <h2>Open an account</h2>
+  <p>Simply click on Get Started to open a demo account, that you can use for 3 days to make sure it fit your needs before subscribing with us.</p>
+</div>
+<div class="part line">
+  <img src="./image/num2.png" alt="">
+  <h2>Link whatsapp</h2>
+  <p>Link your whatsapp account, so you can start sending messages to your customers.
+  </p>
+</div>
+<div class="part s_end">
+  <img src="./image/num3.png" alt="">
+  <h2>Start Sending</h2>
+  <p>Start using our Dashboard to schedule messages, and start your campaign.
+  </p>
+</div>
+
+      </div>
     </section>
     <section class="brands container">
       <h2>Trusted by more than 150+ brands</h2>
@@ -272,28 +296,28 @@
         </ul>
       </div>
       <div class="partSalary">
-        <h2>STANDARD</h2>
-        <h3>$99.95</h3>
+        <h2>PREMIUM</h2>
+        <h3>$199.95</h3>
         <p>Per Year</p>
         <button class="btn_page">Get Started</button>
         <ul>
           <li>24/7 Support</li>
-          <li>2 Linked WhatsApp</li>
-          <li>125,000 Messages/month</li>
-          <li>5 Running campaigns</li>
+          <li>5 Linked WhatsApp</li>
+          <li>250,000 Messages/month</li>
+          <li>20 Running campaigns</li>
           <li>Unlimited Schedules</li>
         </ul>
       </div>
       <div class="partSalary">
-        <h2>STANDARD</h2>
-        <h3>$99.95</h3>
+        <h2>ENTERPRISE</h2>
+        <h3>$349.95</h3>
         <p>Per Year</p>
         <button class="btn_page">Get Started</button>
         <ul>
           <li>24/7 Support</li>
-          <li>2 Linked WhatsApp</li>
-          <li>125,000 Messages/month</li>
-          <li>5 Running campaigns</li>
+          <li>10 Linked WhatsApp</li>
+          <li>750,000 Messages/month</li>
+          <li>Unlimited Running campaigns</li>
           <li>Unlimited Schedules</li>
         </ul>
       </div>
@@ -303,10 +327,11 @@
         <div class="getAbout">
             <h2>Get 3-Day Free Trial !</h2>
             <h3>No Credit Card Needed</h3>
-            <form action="">
-                <input type="number" name="" id="" placeholder="Mobile Number">
-                <input class="btn_page"  type="submit" value="Try Free">
+            <form action="" >
+                  <input id="phone" type="tel" name="phone" placeholder="Mobile Number" />
+                <input class="btn_page try"  type="submit" value="Try Free">
             </form>
+          
         </div>
 
 
@@ -360,8 +385,31 @@
 </div>
         </div>
     </footer>
+    <script>
+      const phoneInputField = document.querySelector("#phone");
+      const btnphoneInputField = document.querySelector(".try");
+      
+      const info = document.querySelector(".alert-info");
+      function getIp(callback) {
+ fetch('https://ipinfo.io/41.47.128.120?token=6f23784d8e0441', { headers: { 'Accept': 'application/json' }})
+   .then((resp) => resp.json())
+   .catch(() => {
+     return {
+       country: 'eg',
+     };
+   })
+   .then((resp) => callback(resp.country));
+  }
+  const phoneInput = window.intlTelInput(phoneInputField, {
+ initialCountry: "auto",
+ geoIpLookup: getIp,
+ utilsScript:
+   "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+});
+    </script>
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    
   </body>
 </html>
