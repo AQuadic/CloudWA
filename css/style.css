@@ -495,19 +495,15 @@ color: #555555;
   top: 50%;
   transform: translateY(-50%);
   right:  0px;
-  
   z-index: 5;
   background-color: #7215fc;
   transition: 0.4s;
-
-  
 }
 .counts .count:hover img{
 transform: scale(1.06);
 }
 .counts .count:hover::after ,.counts .count:hover::before{
   height: calc(100% - 20px);
-  
 }
 .counts .count img{
   max-width: 104px;
@@ -515,7 +511,7 @@ transform: scale(1.06);
  transition: 0.3s;
 }
 .counts .count h3{
-  font-size: 40px;
+font-size: 40px;
 line-height: 52px;
 margin: 0;
 }
