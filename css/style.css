@@ -930,3 +930,181 @@ footer .btn_page{
   margin-bottom: 10px;
 }
 }
+.sign {
+  display: flex;
+  align-items: center;
+  /* padding-top: 210px; */
+  justify-content: space-between;
+  min-height: 1024px;
+}
+.sign .form_sign {
+  max-width: 512px;
+}
+.sign .form_sign h1{
+  font-size: 20px;
+line-height: 26px;
+color: #7313FC;
+text-align: center;
+margin-bottom: 24px;
+}
+.sign .form_sign h2{
+  font-size: 24px;
+line-height: 31px;
+text-align: center;
+margin-bottom: 36px;
+
+}
+
+.sign .form_sign form{
+  
+}
+.sign .form_sign form input[type="email"],.sign .form_sign form input[type="password"] ,.sign_up input,.form-select{
+  background: #F1F1F1;
+border-radius: 10px;
+height: 52px;
+max-width: 513px;
+margin-bottom: 28px;
+border: none;
+}
+.sign .form_sign form label{
+  font-size: 16px;
+line-height: 21px;
+font-family: "DM Sans2";
+
+}
+.sign .form_sign form .form-check{
+  
+}
+.sign .form_sign form .form-check a{
+   font-family: "DM Sans";
+font-size: 16px;
+line-height: 21px;
+text-decoration-line: underline;
+color: #7313FC;
+}
+.sign .part2{
+  text-align: center;
+}
+.sign .part2 h2 {
+  font-size: 40px;
+line-height: 52px;
+color: #FFFFFF;
+}
+.sign .part2 p{
+  font-size: 24px;
+line-height: 31px;
+color: #FFFFFF;
+margin: 40px 0px;
+max-width: 418px;
+}
+.sign .part2 a{
+  
+}
+.btn_log {
+  font-family: "DM Sans";
+  width: 238px;
+  height: 58px;
+  display: flex;
+  background: #FFFFFF;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 26px;
+  border: none;
+  color: #7313FC;
+  align-items: center;
+  
+  justify-content: center;
+  margin: auto;
+}
+.img_log{
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
+}
+.img_log img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+  z-index: -1;
+}
+@media(max-width:1200px){
+   .sign .part2{
+    display: none;
+  }
+  .img_log img {
+    opacity: 0.2;
+  }
+  .sign {
+ 
+    justify-content: center;
+}
+}
+.copy_log{
+  margin-top: 52px;
+  text-align: center;
+
+}
+.copy_log p{
+  font-size: 14px;
+line-height: 18px;
+text-align: center;
+
+color: #000000;
+}
+.copy_log p a{
+text-decoration: underline;
+}
+.check{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.check a{
+  font-size: 16px;
+line-height: 21px;
+text-decoration-line: underline;
+color: #7313FC;
+font-family: "DM Sans";
+
+}
+.check label{
+  font-size: 16px;
+line-height: 21px;  
+}
+.form-check .form-check-input {
+  float: left;
+}
+.sign .btn_page{
+  margin: auto;
+  margin-top: 52px;
+  margin-bottom: 28px;
+}
+.sign .or{
+  font-size: 16px;
+  line-height: 21px;
+  font-family: "DM Sans2";
+text-align: center;
+}
+.sign .or a{
+  font-size: 16px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #7313FC;
+}
+.sign .iti,.sign .iti input{
+  width: 100%;
+  margin-bottom: 24px;
+
+}
+.form-select {
+  margin-bottom: 0px;
+
+  background-position: right.75rem center;
+ 
+}
+.sign_up .part2 h2{
+max-width: 330px;
+}
