@@ -187,8 +187,16 @@ margin-bottom: 300px;
 .headImg{
   position: absolute;
   top: 0;
-  right: 0;
+  
   z-index: -1;
+}
+html[dir=ltr] .headImg{
+right: 0;
+}
+html[dir=rtl] .headImg{
+ 
+  left:  0;
+  transform: rotateY(180deg);
 }
 @media (max-width: 992px){
   .headImg{
@@ -225,6 +233,9 @@ max-width: 450px;
   color: #FFFFFF;
   border: none;
   transition: 0.3s;
+ display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .btn_page:hover {
   background: white;
@@ -395,8 +406,8 @@ margin-bottom: 40px;
   gap: 50px;
   flex-wrap: wrap;
 }
-.brands .img_brand img{
- 
+.brands .img_brand img {
+    height: 48px;
 }
 /*services*/
 .services{
@@ -597,9 +608,20 @@ align-items: flex-start;
 .imgBack{
   position: absolute;
   top: 0;
-  right:  0;
+  
   z-index: -1;
   height: 100%;
+}
+html[dir=rtl] .imgBack{
+
+  right:  0;
+ 
+}
+html[dir=rtl] .imgBack{
+
+  left:  0;
+ 
+  transform: rotateY(180deg);
 }
 .pricing h3{
   color: white;
@@ -696,8 +718,9 @@ color: #555555;
 margin-bottom: 32px;
   
 }
-.salary .partSalary button {
+.salary .partSalary a {
   font-size: 16px;
+  margin: auto;
 }
 .salary .partSalary ul{
 margin-top: 28px;
@@ -1148,4 +1171,7 @@ color: #7313FC;
 }
 .sign_up .part2 h2{
 max-width: 330px;
+}
+.try{
+  display: inline-block;
 }
