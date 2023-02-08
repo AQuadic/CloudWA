@@ -71,6 +71,13 @@
             <li class="nav-item">
               <a class="nav-link" href="#pricing">Pricing</a>
             </li>
+            <li class="nav-item">
+
+              <button class="nav-link" id="chang-lang" href="#pricing">
+                <img src="./image/lang.png" alt="">
+                <p id="text_lang">Eng</p>
+              </button>
+            </li>
           </ul>
         </div>
       </div>
@@ -426,6 +433,21 @@
         </div>
     </footer>
     <script>
+      const chang =document.getElementById("chang-lang");
+      var text_lang =document.getElementById("text_lang");
+      function ch (){
+        console.log(text_lang)
+        if(window.document.dir=== 'rtl'){
+          window.document.dir='ltr';
+          text_lang.innerText="Eng";
+        }else{
+          window.document.dir='rtl'
+          text_lang.innerText="Ar";
+
+        }
+
+      }
+      chang.addEventListener("click",ch)
       const phoneInputField = document.querySelector("#phone");
       const btnphoneInputField = document.querySelector(".try");
       

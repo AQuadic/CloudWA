@@ -84,7 +84,12 @@ body{
   box-shadow: none !important;
   border: 0 !important;
 }
-
+button.nav-link {
+  display: flex;
+  gap: 12px;
+  background: transparent;
+  border: none;
+}
 /* Lines of the Toggler */
 .toggler-icon{
   width: 30px;
