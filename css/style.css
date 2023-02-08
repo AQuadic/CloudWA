@@ -634,17 +634,17 @@ html[dir=rtl] .imgBack{
 line-height: 31px;
 margin-bottom: 38px;
 }
-.pricing .about_pricing .head{
+/* .pricing .about_pricing .head{
   display: flex;
   align-items: flex-start;
   gap: 12px;
   border-bottom: 3px solid #2897FF;
   max-width: 580px;
-}
-.pricing .about_pricing .head img{
+} */
+.pricing .about_pricing  img{
   
 }
-.pricing .about_pricing .head h5{
+.pricing .about_pricing  h5{
   font-size: 18px;
 line-height: 23px;
 
@@ -1174,4 +1174,47 @@ max-width: 330px;
 }
 .try{
   display: inline-block;
+}
+.accordion {
+max-width: 580px;
+}
+.accordion-button{
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.accordion-button::after{
+  display: none;
+}
+.accordion-item{
+
+}
+.accordion-button ,.accordion-item{
+ 
+  background-color: transparent;
+ 
+}
+.accordion-button:not(.collapsed) {
+color: white;
+   background-color: transparent; 
+  border-bottom: 3px #2897ff solid;
+}
+.accordion-flush .accordion-item .accordion-button {
+  color: white;
+  text-align: start;
+  padding-right: 0;
+    padding-left: 0;
+}
+.accordion-button:focus{
+  box-shadow: none;
+}
+.accordion-body{
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 30px;
+  max-width: 600px;
+ 
+}
+.accordion-flush .accordion-item{
+  border: none;
 }
