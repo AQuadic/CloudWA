@@ -64,6 +64,9 @@ html::-webkit-scrollbar-track{
   max-width: 1440px ;
   margin: auto;
 }
+body{
+  overflow-x: clip;
+}
 /*start navbar*/
 /* Remove border from toggler */
 .navbar {
@@ -178,26 +181,60 @@ color: white;
     padding: 20px;
 }
   }
+  @media (min-width: 1440px){
+.navbar-expand-lg .navbar-collapse {
+   justify-content: flex-start;
+}
+  }
 /*end navbar*/
 /*start about*/
 .about{
 margin-top: 200px;
 margin-bottom: 300px;
 }
-.headImg{
+.back {
+  position: absolute;
+  content: "";
+  width: calc( 19%);
+  height: 719px;
+  top: -3px;
+  background: linear-gradient(90deg, #8c47f0, white);
+  filter: blur(2px);
+  max-width: 500px;
+}
+.headImg ,.headImg2{
   position: absolute;
   top: 0;
   
   z-index: -1;
 }
-html[dir=ltr] .headImg{
+.headImg2 ,.back{
+display: none;
+}
+html[dir=ltr] .headImg ,html[dir=ltr] .headImg2 {
 right: 0;
 }
-html[dir=rtl] .headImg{
+html[dir=ltr] .back {
+  left: 84%;
+}
+html[dir=rtl] .back{
+  left:  1%;
+  transform: rotateY(180deg);
+
+}
+html[dir=rtl] .headImg ,html[dir=rtl]  .headImg2 {
  
   left:  0;
   transform: rotateY(180deg);
 }
+@media (min-width: 1440px){
+  .headImg2, .back{
+    display: block;
+  }
+  .headImg{
+    display: none;
+  }
+  }
 @media (max-width: 992px){
   .headImg{
    opacity: 0.2;
