@@ -84,7 +84,7 @@ body{
   box-shadow: none !important;
   border: 0 !important;
 }
-button.nav-link {
+a.nav-link {
   display: flex;
   gap: 12px;
   background: transparent;
