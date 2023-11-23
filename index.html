@@ -375,8 +375,8 @@
             <h2>Get 3-Day Free Trial !</h2>
             <h3>No Credit Card Needed</h3>
             <form action="" >
-                  <input id="phone" type="tel" name="phone" placeholder="Mobile Number" />
-                <input class="btn_page try"  type="submit" value="Try Free">
+                <input id="phone" type="tel" name="phone" placeholder="Mobile Number" />
+               
             </form>
           
         </div>
@@ -433,26 +433,10 @@
         </div>
     </footer>
     <script>
-      const chang =document.getElementById("chang-lang");
-      var text_lang =document.getElementById("text_lang");
-      function ch (){
-        console.log(text_lang)
-        if(window.document.dir=== 'rtl'){
-          window.document.dir='ltr';
-          text_lang.innerText="Eng";
-        }else{
-          window.document.dir='rtl'
-          text_lang.innerText="Ar";
-
-        }
-
-      }
-      chang.addEventListener("click",ch)
+  
       const phoneInputField = document.querySelector("#phone");
-      const btnphoneInputField = document.querySelector(".try");
-      
-      const info = document.querySelector(".alert-info");
-      function getIp(callback) {
+
+function getIp(callback) {  
  fetch('https://ipinfo.io/41.47.128.120?token=6f23784d8e0441', { headers: { 'Accept': 'application/json' }})
    .then((resp) => resp.json())
    .catch(() => {
@@ -460,7 +444,8 @@
        country: 'eg',
      };
    })
-   .then((resp) => callback(resp.country));
+   .then((resp) => {callback(resp.country)});
+  
   }
   const phoneInput = window.intlTelInput(phoneInputField, {
  initialCountry: "auto",
@@ -468,6 +453,7 @@
  utilsScript:
    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
 });
+
     </script>
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.6.1.min.js"></script>

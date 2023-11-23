@@ -1260,3 +1260,107 @@ color: white;
 .accordion-flush .accordion-item{
   border: none;
 }
+.collapse2 a {
+  color: black !important;
+}
+.newPage{}
+.newPage h1{
+  color: var(--main_color);
+  font-family: "DM Sans";
+font-size: 24px;
+margin-bottom: 18px;
+text-align: center;
+}
+.newPage h2{
+  color: #000;
+  font-family: "DM Sans";
+font-size: 24px;
+text-align: center;
+}
+.newPage .subscription{
+  margin-top: 50px;
+  margin-bottom: 70px;
+  
+}
+.newPage .subscription .parts{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.newPage .subscription .parts .part{
+  min-width: 290px;
+  border-radius: 20px;
+  padding: 32px 76px;
+  background: #F2F7F8;
+  min-height: 490px;
+  flex: 1;
+}
+.newPage .subscription .parts .part.active{
+  border: 3px solid #A15FFF;
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.24);
+
+}
+.newPage .subscription .parts .part h3{
+text-align: center;
+font-family: "DM Sans2";
+font-size: 24px;
+margin-bottom: 26px;
+
+}
+.newPage .subscription .parts .part h4{
+text-align: center;
+font-family: "DM Sans";
+font-size: 64px;
+margin-bottom: 12px;
+}
+.newPage .subscription .parts .part p{
+  color: #555;
+text-align: center;
+font-family: "DM Sans3";
+font-size: 20px;
+margin-bottom: 30px;
+}
+.newPage .subscription .parts .part ul{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+ padding: 0;
+}
+.newPage .subscription .parts .part ul li{
+  color: #555;
+  font-family: "DM Sans3";
+font-size: 16px;
+line-height: 25px; /* 156.25% */
+}
+.newPage .btnSub{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.newPage .btnSub input{
+
+width: 238px;
+height: 58px;
+border: none;
+}
+.newPage .cancel{
+  text-align: center;
+}
+.newPage .cancel p{
+  font-family: "DM Sans2";
+  color: #000;
+font-size: 16px;
+text-align: center;
+
+}
+.newPage .cancel p span{
+  color: #000;
+  font-family: "DM Sans3";
+font-size: 16px;
+opacity: 0.5;
+
+}
