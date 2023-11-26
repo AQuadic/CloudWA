@@ -1226,6 +1226,8 @@ footer .copy a {
   min-height: 490px;
   flex: 1;
   max-width: 368px;
+  border: 3px solid transparent;
+  cursor: pointer;
 }
 .newPage .subscription .parts .part.active {
   border: 3px solid #a15fff;
